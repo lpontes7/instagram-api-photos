@@ -48,7 +48,7 @@ $ npm run test:cov
 
 ## License
 
-instagram-api-photos is [MIT licensed](LICENSE).
+instagram-api-photos is [MIT licensed](LICENSE).<br/>
 Nest is [MIT licensed](LICENSE).
 
 ## Support NestJs
