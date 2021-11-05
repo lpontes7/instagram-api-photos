@@ -24,7 +24,7 @@
 
 ## Description
 
-API the get photos by instragam builded with framework NestJs [Nest](https://github.com/nestjs/nest)
+API the get photos of instragam builded with framework [Nest](https://github.com/nestjs/nest)
 
 ## Running the app
 
