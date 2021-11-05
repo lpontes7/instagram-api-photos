@@ -1,17 +1,17 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { InstagramController } from '../instagram.controller';
+import { InstagramService } from '../instagram.service';
 
 describe('AppController', () => {
-  let appController: AppController;
+  let appController: InstagramController;
 
   beforeEach(async () => {
     const app: TestingModule = await Test.createTestingModule({
-      controllers: [AppController],
-      providers: [AppService],
+      controllers: [ InstagramController],
+      providers: [ InstagramService],
     }).compile();
 
-    appController = app.get<AppController>(AppController);
+    appController = app.get<InstagramController>(InstagramController);
   });
 
   describe('root', () => {

@@ -11,11 +11,7 @@ const writeFile = promisify(writeFileCallback);
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  app.enableCors({
-    maxAge: 3600,
-    allowedHeaders: ['token-usuario', 'content-type'],
-    exposedHeaders: ['Content-Disposition'],
-  });
+  app.enableCors();
 
   app.useGlobalPipes(
     new ValidationPipe({
