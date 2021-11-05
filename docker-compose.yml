@@ -1,0 +1,17 @@
+version: '3.4'
+services:
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    restart: always
+    env_file:
+     - .env
+    ports:
+      - "${API_PORTA}:${API_PORTA}"
+      - "${DEBUG_PORTA}:${DEBUG_PORTA}"
+    command: yarn run start:dev --debug 0.0.0.0:${DEBUG_PORTA}
+    volumes:
+      - .:/app:z
